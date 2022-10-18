@@ -21,5 +21,10 @@ public class Main {
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
         me.pet.feed();
+
+
+        me.car = new Car("FSO", "Caro Plus");
+        me.car.color = "czerwony";
+        me.car.millage = 100000;
     }
 }
