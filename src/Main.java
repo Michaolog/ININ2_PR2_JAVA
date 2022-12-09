@@ -20,16 +20,20 @@ public class Main {
         me.pet.feed();
 
         //Zadanie 2
-        me.car = new Car("FSO", "Caro Plus");
-        me.car.color = "czerwony";
-        me.car.millage = 100000;
+        Car polonez = new Car("FSO", "Caro Plus");
+        polonez.color = "czerwony";
+        polonez.millage = 100000;
 
         //Zadanie 3 i 4
         Scanner scan = new Scanner(System.in);
         for(int i = 0; i < 3; i++) {
             System.out.print("\nPodaj wysokość nowego wynagrodznia dla " + me.firstName + " " + me.lastName + ": ");
             me.setSalary(Double.parseDouble(scan.nextLine()));
-            System.out.println("Twoje obecne wynagrodzenie wynosi:" + me.getSalary());
+            System.out.println("Twoje obecne wynagrodzenie wynosi:" + me.getSalary() + "\n");
         }
+
+        //Zadanie 5
+        polonez.Value = 2000;
+        me.setCar(polonez);
     }
 }

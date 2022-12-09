@@ -4,7 +4,7 @@ public class Human {
     String lastName;
     final Integer yearOfBirth;
     Animal pet;
-    Car car;
+    private Car car;
     private Double salary = 0.0;
     private Double lastSalary = 0.0;
     private Date lastSalaryInfo;
@@ -39,6 +39,23 @@ public class Human {
         }
         else{
             System.out.println("Wypłata nie może być ujemna!");
+        }
+    }
+
+    public Car getCar(){
+        return car;
+    }
+    public void setCar(Car car){
+        if(this.salary > car.Value){
+            System.out.println("Udało się kupić auto za gotówkę.");
+            this.car = car;
+        }
+        else if((this.salary * 12) > car.Value){
+            System.out.println("Udało się kupić auto na kredyt.");
+            this.car = car;
+        }
+        else{
+            System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę!");
         }
     }
 }

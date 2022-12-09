@@ -4,6 +4,7 @@ public class Car {
     String color;
     Integer millage;
     Boolean isOn;
+    Integer Value;
 
     public Car(String producer, String model) {
         this.producer = producer;
