@@ -1,3 +1,5 @@
+import devices.*;
+
 import java.util.Scanner;
 
 public class Main {
@@ -35,5 +37,26 @@ public class Main {
         //Zadanie 5
         polonez.Value = 2000;
         me.setCar(polonez);
+
+        //Zadanie 6
+        Car polonez2 = new Car("FSO", "Caro Plus");
+        polonez2.color = "czerwony";
+        polonez2.millage = 100000;
+        polonez2.Value = 2000;
+        Car polonez3 = polonez;
+
+        System.out.println("\n" + polonez.equals(polonez2));
+        System.out.println("Polonez hashcode is:" + polonez.hashCode());
+        System.out.println("Polonez2 hashcode is:" + polonez2.hashCode());
+
+        System.out.println("\n" + polonez.equals(polonez3));
+        System.out.println("Polonez hashcode is:" + polonez.hashCode());
+        System.out.println("Polonez3 hashcode is:" + polonez3.hashCode());
+
+        Phone phone = new Phone("Xiaomi","Mi 10T Lite");
+        System.out.println("\n"+polonez);
+        System.out.println(me.pet);
+        System.out.println(me);
+        System.out.println(phone);
     }
 }

@@ -1,3 +1,5 @@
+import devices.Car;
+
 import java.util.Date;
 public class Human {
     String firstName;
@@ -57,5 +59,9 @@ public class Human {
         else{
             System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę!");
         }
+    }
+
+    public String toString(){
+        return firstName+" "+lastName+" "+yearOfBirth+" "+pet+" "+car+" "+salary+" "+lastSalary+" "+lastSalaryInfo;
     }
 }

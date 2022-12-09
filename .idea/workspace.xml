@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4">
+    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/devices/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Phone.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +36,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michał Łuczak\IdeaProjects\ININ2_PR2_JAVA_LAB_1\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -67,7 +78,8 @@
       <workItem from="1666543517568" duration="185000" />
       <workItem from="1670082886282" duration="13000" />
       <workItem from="1670525630720" duration="1058000" />
-      <workItem from="1670610359361" duration="2501000" />
+      <workItem from="1670610359361" duration="2920000" />
+      <workItem from="1670614979380" duration="7244000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666025546104</created>
@@ -118,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666527200172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Zadanie 0,1,2,3/4,5">
+      <created>1670614688317</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670614688317</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +161,7 @@
     <MESSAGE value="Zadanie 0/1/2" />
     <MESSAGE value="Zadanie 0,1,2,3/4 do dokończenia" />
     <MESSAGE value="Zadanie 0,1,2,3/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4" />
+    <MESSAGE value="Zadanie 0,1,2,3/4,5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4,5" />
   </component>
 </project>

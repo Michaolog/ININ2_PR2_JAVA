@@ -47,4 +47,8 @@ public class Animal {
     public Double getWeight() {
         return weight;
     }
+
+    public String toString(){
+        return species+" "+name+" "+weight+" "+isAlive;
+    }
 }
