@@ -1,19 +1,20 @@
 package devices;
-public class Car {
-    final String producer;
-    final String model;
-    public String color;
+public class Car extends Device{
     public Integer millage;
-    Boolean isOn;
-    public Integer Value;
+    public Integer value;
 
-    public Car(String producer, String model) {
-        this.producer = producer;
-        this.model = model;
-        this.isOn = true;
+    public Car(String producer, String model, Integer yearOfProduction){
+        super(producer, model, yearOfProduction);
     }
 
+
     public String toString(){
-        return producer+" "+model+" "+color+" "+millage+" "+isOn+" "+Value;
+        return producer+" "+model+" "+yearOfProduction+" "+isOn+" "+color+" "+millage+" "+value;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("\nSamochód odpalony.");
+        isOn = true;
     }
 }

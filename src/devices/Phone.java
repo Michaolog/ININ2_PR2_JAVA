@@ -1,14 +1,19 @@
 package devices;
-public class Phone {
-    String producer;
-    String model;
+public class Phone extends Device {
+    final Double screenSize;
 
-    public Phone(String producer, String model) {
-        this.producer = producer;
-        this.model = model;
+    public Phone(String producer, String model, Integer yearOfProduction, Double screenSize){
+        super(producer, model, yearOfProduction);
+        this.screenSize = screenSize;
     }
 
     public String toString(){
-        return producer+" "+model;
+        return producer+" "+model+" "+yearOfProduction+" "+isOn+" "+color+" "+" "+screenSize;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("\nTelefon włączony.");
+        isOn = true;
     }
 }

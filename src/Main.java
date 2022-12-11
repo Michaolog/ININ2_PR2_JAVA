@@ -22,7 +22,7 @@ public class Main {
         me.pet.feed();
 
         //Zadanie 2
-        Car polonez = new Car("FSO", "Caro Plus");
+        Car polonez = new Car("FSO", "Caro Plus", 2000);
         polonez.color = "czerwony";
         polonez.millage = 100000;
 
@@ -35,14 +35,14 @@ public class Main {
         }
 
         //Zadanie 5
-        polonez.Value = 2000;
+        polonez.value = 2000;
         me.setCar(polonez);
 
         //Zadanie 6
-        Car polonez2 = new Car("FSO", "Caro Plus");
+        Car polonez2 = new Car("FSO", "Caro Plus", 2000);
         polonez2.color = "czerwony";
         polonez2.millage = 100000;
-        polonez2.Value = 2000;
+        polonez2.value = 2000;
         Car polonez3 = polonez;
 
         System.out.println("\n" + polonez.equals(polonez2));
@@ -53,10 +53,14 @@ public class Main {
         System.out.println("Polonez hashcode is:" + polonez.hashCode());
         System.out.println("Polonez3 hashcode is:" + polonez3.hashCode());
 
-        Phone phone = new Phone("Xiaomi","Mi 10T Lite");
+        Phone phone = new Phone("Xiaomi","Mi 10T Lite", 2000, 6.7);
         System.out.println("\n"+polonez);
         System.out.println(me.pet);
         System.out.println(me);
         System.out.println(phone);
+
+        //Zadanie7
+        polonez.turnOn();
+        phone.turnOn();
     }
 }

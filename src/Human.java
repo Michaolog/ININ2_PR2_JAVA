@@ -47,12 +47,13 @@ public class Human {
     public Car getCar(){
         return car;
     }
+
     public void setCar(Car car){
-        if(this.salary > car.Value){
+        if(this.salary > car.value){
             System.out.println("Udało się kupić auto za gotówkę.");
             this.car = car;
         }
-        else if((this.salary * 12) > car.Value){
+        else if((this.salary * 12) > car.value){
             System.out.println("Udało się kupić auto na kredyt.");
             this.car = car;
         }
