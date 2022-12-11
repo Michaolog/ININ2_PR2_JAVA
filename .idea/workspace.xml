@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +71,7 @@
       <workItem from="1670610359361" duration="2920000" />
       <workItem from="1670614979380" duration="7955000" />
       <workItem from="1670754572421" duration="114000" />
+      <workItem from="1670755654122" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1666025546104</created>
@@ -137,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670623551466</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Zadanie 0,1,2,3/4,5,6">
+      <created>1670755863332</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670755863332</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
