@@ -1,11 +1,16 @@
-public class Animal {
+package creatures;
+
+import creatures.Human;
+import interfaces.salleable;
+
+public class Animal implements salleable {
     private static final Double DEFAULT_DOG_WEIGHT = 10.5;
     private static final Double DEFAULT_CAT_WEIGHT = 4.0;
     private static final Double DEFAULT_ELEPHANT_WEIGHT = 700.0;
     private static final Double DEFAULT_ANIMAL_WEIGHT = 1.0;
 
     final String species;
-    String name;
+    public String name;
     private Double weight;
     Boolean isAlive;
 
@@ -50,5 +55,19 @@ public class Animal {
 
     public String toString(){
         return species+" "+name+" "+weight+" "+isAlive;
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if (seller.pet == null) {
+            System.out.println("Sprzedający nie ma zwierzęcia do sprzedania!");
+        } else if (buyer.cash < price) {
+            System.out.println("Nie stać cię na to zwierze!");
+        } else {
+            buyer.pet = seller.pet;
+            buyer.cash -= price;
+            seller.cash += price;
+            seller.pet = null;
+        }
     }
 }

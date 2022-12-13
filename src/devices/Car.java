@@ -1,4 +1,7 @@
 package devices;
+
+import creatures.Human;
+
 public class Car extends Device{
     public Integer millage;
     public Integer value;
@@ -16,5 +19,27 @@ public class Car extends Device{
     public void turnOn() {
         System.out.println("\nSamochód odpalony.");
         isOn = true;
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if (seller.getCar() == null){
+            System.out.println("Sprzedający nie ma auta do sprzedania!");
+        }
+        else if(buyer.cash < price){
+            System.out.println("Nie stać cię na to auto!");
+        }
+        else {
+            buyer.setCar(seller.getCar());
+            if(buyer.getCar() != null){
+                buyer.cash -= price;
+                seller.cash += price;
+                Car car = new Car(null, null, null);
+                seller.setCar(car);
+            }
+            else {
+                System.out.println("Nie kupisz tego auta. Masz za niską pensję, nie zarobisz na utrzymanie.");
+            }
+        }
     }
 }

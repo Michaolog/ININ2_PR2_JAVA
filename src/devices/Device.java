@@ -1,6 +1,7 @@
 package devices;
+import interfaces.salleable;
 
-public abstract class Device {
+public abstract class Device implements salleable {
     final String producer;
     final String model;
     final Integer yearOfProduction;

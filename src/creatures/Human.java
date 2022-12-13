@@ -1,18 +1,23 @@
+package creatures;
+
 import devices.Car;
+import devices.Phone;
 
 import java.util.Date;
 public class Human {
-    String firstName;
-    String lastName;
+    public String firstName;
+    public String lastName;
     final Integer yearOfBirth;
-    Animal pet;
+    public Animal pet;
     private Car car;
+    public Phone phone;
     private Double salary = 0.0;
     private Double lastSalary = 0.0;
     private Date lastSalaryInfo;
+    public Double cash = 0.0;
 
 
-    Human(Integer yearOfBirth) {
+    public Human(Integer yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
 
@@ -49,16 +54,19 @@ public class Human {
     }
 
     public void setCar(Car car){
-        if(this.salary > car.value){
-            System.out.println("Udało się kupić auto za gotówkę.");
-            this.car = car;
+        if (car.value != null) {
+            if (this.salary > car.value) {
+                System.out.println("Udało się kupić auto za gotówkę.");
+                this.car = car;
+            } else if ((this.salary * 12) > car.value) {
+                System.out.println("Udało się kupić auto na kredyt.");
+                this.car = car;
+            } else {
+                System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę!");
+            }
         }
-        else if((this.salary * 12) > car.value){
-            System.out.println("Udało się kupić auto na kredyt.");
-            this.car = car;
-        }
-        else{
-            System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę!");
+        else {
+            this.car = null;
         }
     }
 

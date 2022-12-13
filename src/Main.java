@@ -1,3 +1,5 @@
+import creatures.Animal;
+import creatures.Human;
 import devices.*;
 
 import java.util.Scanner;
@@ -62,5 +64,13 @@ public class Main {
         //Zadanie7
         polonez.turnOn();
         phone.turnOn();
+
+        //Zadanie 8
+        Human random = new Human(1977);
+        random.cash = 3500.0;
+        random.setSalary(3700.0);
+        me.getCar().sell(me, random, 2500.0);
+        System.out.println(random.getCar());
+
     }
 }
