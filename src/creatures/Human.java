@@ -4,11 +4,12 @@ import devices.Car;
 import devices.Phone;
 
 import java.util.Date;
-public class Human {
+public class Human extends Animal{
     public String firstName;
     public String lastName;
     final Integer yearOfBirth;
-    public Animal pet;
+    public Pet pet;
+    public FarmAnimal farmAnimal;
     private Car car;
     public Phone phone;
     private Double salary = 0.0;
@@ -17,7 +18,8 @@ public class Human {
     public Double cash = 0.0;
 
 
-    public Human(Integer yearOfBirth) {
+    public Human(String species, Integer yearOfBirth) {
+        super(species);
         this.yearOfBirth = yearOfBirth;
     }
 

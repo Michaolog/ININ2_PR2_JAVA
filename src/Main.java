@@ -1,5 +1,6 @@
-import creatures.Animal;
+import creatures.FarmAnimal;
 import creatures.Human;
+import creatures.Pet;
 import devices.*;
 
 import java.util.Scanner;
@@ -8,10 +9,10 @@ public class Main {
     public static void main(String[] args) {
 
         //Zadanie 1
-        Human me = new Human(2000);
+        Human me = new Human("homo sapiens",2000);
         me.firstName = "Michał";
         me.lastName = "Łuczak";
-        me.pet = new Animal("felis");
+        me.pet = new Pet("felis");
         me.pet.name = "Feliks";
 
         System.out.println("Obecna waga " + me.pet.name + "a wynosi: " + me.pet.getWeight() + ".");
@@ -66,11 +67,15 @@ public class Main {
         phone.turnOn();
 
         //Zadanie 8
-        Human random = new Human(1977);
+        Human random = new Human("homo sapiens", 1977);
         random.cash = 3500.0;
         random.setSalary(3700.0);
         me.getCar().sell(me, random, 2500.0);
         System.out.println(random.getCar());
 
+        //Zadanie 9
+        me.farmAnimal = new FarmAnimal("cow");
+        me.farmAnimal.feed(10.0);
+        me.farmAnimal.beEaten();
     }
 }

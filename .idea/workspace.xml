@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6,7">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/salleable.java" afterDir="false" />
+    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6,7,8">
+      <change afterPath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creatures/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Edbile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Feedable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Human.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670782168535</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Zadanie 0,1,2,3/4,5,6,7,8">
+      <created>1670964339199</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670964339199</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +207,7 @@
     <MESSAGE value="Zadanie 0,1,2,3/4,5,6" />
     <MESSAGE value="test" />
     <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4,5,6,7" />
+    <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7,8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4,5,6,7,8" />
   </component>
 </project>
