@@ -54,7 +54,7 @@ public abstract class Animal implements Feedable {
     public void setWeight(Double x)
     {
         this.weight = this.weight - x;
-    };
+    }
 
     public String toString(){
         return species+" "+weight+" "+isAlive;
