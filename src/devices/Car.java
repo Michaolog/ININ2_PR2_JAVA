@@ -2,7 +2,7 @@ package devices;
 
 import creatures.Human;
 
-public class Car extends Device{
+public abstract class Car extends Device{
     public Integer millage;
     public Integer value;
 
@@ -34,12 +34,13 @@ public class Car extends Device{
             if(buyer.getCar() != null){
                 buyer.cash -= price;
                 seller.cash += price;
-                Car car = new Car(null, null, null);
-                seller.setCar(car);
+                Car none = new Diesel(null, null, null);
+                seller.setCar(none);
             }
             else {
                 System.out.println("Nie kupisz tego auta. Masz za niską pensję, nie zarobisz na utrzymanie.");
             }
         }
     }
+    public abstract void refuel();
 }

@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6,7,8">
-      <change afterPath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creatures/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Edbile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Feedable.java" afterDir="false" />
+    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6,7,8,9">
+      <change afterPath="$PROJECT_DIR$/src/devices/Diesel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/devices/Electric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/devices/LPG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creatures/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/salleable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/salleable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,10 +49,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="devices" />
@@ -180,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670964339199</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Zadanie 0,1,2,3/4,5,6,7,8,9">
+      <created>1673715697820</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673715697820</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +224,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7" />
     <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7,8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4,5,6,7,8" />
+    <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7,8,9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4,5,6,7,8,9" />
   </component>
 </project>

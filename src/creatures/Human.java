@@ -71,6 +71,13 @@ public class Human extends Animal{
             this.car = null;
         }
     }
+    public void sell(Human seller, Human buyer, Double price){
+        System.out.println("Handel ludzmi jest nielegalny.");
+    }
+
+    public void feed(){
+        System.out.println("Jem zupe!");
+    }
 
     public String toString(){
         return firstName+" "+lastName+" "+yearOfBirth+" "+pet+" "+car+" "+salary+" "+lastSalary+" "+lastSalaryInfo;

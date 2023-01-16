@@ -1,4 +1,5 @@
 package interfaces;
+import creatures.Animal;
 import creatures.Human;
 
 public interface salleable {

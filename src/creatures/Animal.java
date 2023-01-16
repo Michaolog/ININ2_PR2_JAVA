@@ -2,13 +2,17 @@ package creatures;
 
 
 import interfaces.Feedable;
+import interfaces.salleable;
 
-public abstract class Animal implements Feedable {
+import java.util.Scanner;
+
+public abstract class Animal implements Feedable, salleable {
     private static final Double DEFAULT_DOG_WEIGHT = 10.5;
     private static final Double DEFAULT_CAT_WEIGHT = 4.0;
     private static final Double DEFAULT_COW_WEIGHT = 700.0;
     private static final Double DEFAULT_HUMAN_WEIGHT = 70.0;
     private static final Double DEFAULT_ANIMAL_WEIGHT = 1.0;
+    private static final Double DEFAULT_FOOD_WEIGHT = 1.0;
 
     final String species;
     private Double weight;
@@ -29,20 +33,15 @@ public abstract class Animal implements Feedable {
 
     @Override
     public void feed(){
-        if(this.isAlive){
-            this.weight += 1.0;
-        }
-        else{
-            System.out.println("Zwierze jest martwe. Nie możesz go nakarmić.");
-        }
+        this.feed(DEFAULT_FOOD_WEIGHT);
     }
 
     @Override
     public void feed(Double foodWeight){
-        if(this.isAlive){
+        if(isAlive){
             this.weight += foodWeight;
-        }
-        else{
+            System.out.println("Dzięki za jedzenie.");
+        } else {
             System.out.println("Zwierze jest martwe. Nie możesz go nakarmić.");
         }
     }
@@ -53,7 +52,22 @@ public abstract class Animal implements Feedable {
 
     public void setWeight(Double x)
     {
-        this.weight = this.weight - x;
+        this.weight = this.weight + x;
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if (seller.pet == null) {
+            System.out.println("Sprzedający nie ma zwierzęcia do sprzedania!");
+        }
+        else if (buyer.cash < price) {
+            System.out.println("Nie stać cię na to zwierze!");
+        } else {
+            buyer.pet = seller.pet;
+            buyer.cash -= price;
+            seller.cash += price;
+            seller.pet = null;
+        }
     }
 
     public String toString(){
