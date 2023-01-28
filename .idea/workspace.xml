@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6,7,8,9">
-      <change afterPath="$PROJECT_DIR$/src/devices/Diesel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/devices/Electric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/devices/LPG.java" afterDir="false" />
+    <list default="true" id="3e4a644f-c227-4a90-82d7-44aef04dfcb2" name="Changes" comment="Zadanie 0,1,2,3/4,5,6,7,8,9,10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Pet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Diesel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Diesel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Electric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Electric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/LPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/LPG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/salleable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/salleable.java" afterDir="false" />
     </list>
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673715697820</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Zadanie 0,1,2,3/4,5,6,7,8,9,10">
+      <created>1673900748692</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673900748692</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +231,7 @@
     <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7" />
     <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7,8" />
     <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7,8,9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4,5,6,7,8,9" />
+    <MESSAGE value="Zadanie 0,1,2,3/4,5,6,7,8,9,10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0,1,2,3/4,5,6,7,8,9,10" />
   </component>
 </project>

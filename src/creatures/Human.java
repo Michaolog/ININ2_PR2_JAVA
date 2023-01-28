@@ -3,14 +3,17 @@ package creatures;
 import devices.Car;
 import devices.Phone;
 
+import java.util.Arrays;
 import java.util.Date;
+
 public class Human extends Animal{
+    private static final int DEFAULT_GARAGE_SIZE = 2;
     public String firstName;
     public String lastName;
     final Integer yearOfBirth;
     public Pet pet;
     public FarmAnimal farmAnimal;
-    private Car car;
+    private Car[] garage;
     public Phone phone;
     private Double salary = 0.0;
     private Double lastSalary = 0.0;
@@ -21,8 +24,14 @@ public class Human extends Animal{
     public Human(String species, Integer yearOfBirth) {
         super(species);
         this.yearOfBirth = yearOfBirth;
+        this.garage = new Car[DEFAULT_GARAGE_SIZE];
     }
 
+    public Human(String species, Integer yearOfBirth, Integer sizeOfGarage){
+        super(species);
+        this.yearOfBirth = yearOfBirth;
+        this.garage = new Car[sizeOfGarage];
+    }
 
     public Double getSalary(){
         if(lastSalaryInfo != null) {
@@ -51,24 +60,65 @@ public class Human extends Animal{
         }
     }
 
-    public Car getCar(){
-        return car;
-    }
-
-    public void setCar(Car car){
-        if (car.value != null) {
-            if (this.salary > car.value) {
-                System.out.println("Udało się kupić auto za gotówkę.");
-                this.car = car;
-            } else if ((this.salary * 12) > car.value) {
-                System.out.println("Udało się kupić auto na kredyt.");
-                this.car = car;
-            } else {
-                System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę!");
-            }
+    public Car getCar(Integer carIndex){
+        if(carIndex < this.garage.length && carIndex >= 0) {
+            return garage[carIndex];
         }
         else {
-            this.car = null;
+            return null;
+        }
+    }
+
+    public void setCar(Car car, Integer carIndex){
+        if(carIndex < this.garage.length && carIndex >= 0 && this.garage[carIndex] == null) {
+            this.garage[carIndex] = car;
+        }
+        else {
+            System.out.println("Nie można dodać tego samochodu do garażu.");
+        }
+    }
+
+    public int carIndex(Car car){
+        for (int i = 0; i <= this.garage.length-1; i++) {
+            if (this.garage[i] == car) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void removeCar(int carIndex){
+        this.garage[carIndex] = null;
+    }
+
+    public Car[] getGarage(){
+        return garage;
+    }
+
+    public double getGarageValue(){
+        double valueOfGarage = 0.0;
+        for (Car x:garage)
+        {
+            if(x == null){
+                valueOfGarage += 0.0;
+            }
+            else{
+                valueOfGarage += x.value;
+            }
+        }
+        return valueOfGarage;
+    }
+
+    public void sortGarage() {
+        Car car;
+        for (int i = 0; i <= garage.length - 1; i++) {
+            for (int j = 0; j <= garage.length - 1; j++) {
+                if(garage[i].yearOfProduction < garage[j].yearOfProduction){
+                    car = garage[i];
+                    garage[i] = garage[j];
+                    garage[j] = car;
+                }
+            }
         }
     }
     public void sell(Human seller, Human buyer, Double price){
@@ -80,6 +130,6 @@ public class Human extends Animal{
     }
 
     public String toString(){
-        return firstName+" "+lastName+" "+yearOfBirth+" "+pet+" "+car+" "+salary+" "+lastSalary+" "+lastSalaryInfo;
+        return firstName+" "+lastName+" "+yearOfBirth+" "+pet+" "+ Arrays.toString(garage) +" "+salary+" "+lastSalary+" "+lastSalaryInfo;
     }
 }

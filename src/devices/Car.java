@@ -2,12 +2,13 @@ package devices;
 
 import creatures.Human;
 
+
 public abstract class Car extends Device{
     public Integer millage;
-    public Integer value;
+    public String plate;
 
-    public Car(String producer, String model, Integer yearOfProduction){
-        super(producer, model, yearOfProduction);
+    public Car(String producer, String model, Integer yearOfProduction, Double value){
+        super(producer, model, yearOfProduction, value);
     }
 
 
@@ -22,25 +23,25 @@ public abstract class Car extends Device{
     }
 
     @Override
-    public void sell(Human seller, Human buyer, Double price) {
-        if (seller.getCar() == null){
-            System.out.println("Sprzedający nie ma auta do sprzedania!");
+    public void sell(Human seller, Human buyer, Double price) throws Exception {
+        if(seller.carIndex(this) < 0){
+            throw new Exception("Sprzedający nie ma tego samochodu.");
         }
-        else if(buyer.cash < price){
-            System.out.println("Nie stać cię na to auto!");
+
+        if(buyer.carIndex(null) < 0){
+            throw new Exception("Kupujący nie ma wolnego mniejsca w garażu.");
         }
-        else {
-            buyer.setCar(seller.getCar());
-            if(buyer.getCar() != null){
-                buyer.cash -= price;
-                seller.cash += price;
-                Car none = new Diesel(null, null, null);
-                seller.setCar(none);
-            }
-            else {
-                System.out.println("Nie kupisz tego auta. Masz za niską pensję, nie zarobisz na utrzymanie.");
-            }
+
+        if(buyer.cash < price){
+            throw new Exception("Kupujący ma za mało gotówki.");
         }
+
+        buyer.setCar(this, buyer.carIndex(null));
+        seller.removeCar(seller.carIndex(this));
+
+        buyer.cash -= price;
+        seller.cash += price;
+        System.out.println("Transakcja zakończyła się sukcesem.");
     }
-    public abstract void refuel();
+    public abstract void refuel ();
 }

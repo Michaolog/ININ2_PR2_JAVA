@@ -10,8 +10,8 @@ public class Phone extends Device {
     private static final String DEFAULT_APP_SERVER_ADRESS = "192.168.0.2";
     final Double screenSize;
 
-    public Phone(String producer, String model, Integer yearOfProduction, Double screenSize) {
-        super(producer, model, yearOfProduction);
+    public Phone(String producer, String model, Integer yearOfProduction, Double value, Double screenSize) {
+        super(producer, model, yearOfProduction, value);
         this.screenSize = screenSize;
     }
 

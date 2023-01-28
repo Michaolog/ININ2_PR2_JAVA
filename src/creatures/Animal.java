@@ -4,8 +4,6 @@ package creatures;
 import interfaces.Feedable;
 import interfaces.salleable;
 
-import java.util.Scanner;
-
 public abstract class Animal implements Feedable, salleable {
     private static final Double DEFAULT_DOG_WEIGHT = 10.5;
     private static final Double DEFAULT_CAT_WEIGHT = 4.0;
