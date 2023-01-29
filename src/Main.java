@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
 
         /*Zadanie 1
         Human me = new Human("homo sapiens", 2000);
@@ -140,19 +140,19 @@ public class Main {
             Tesla.sell(bolek, lolek, 50000.0);
         }
         catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         try{
             Tesla.sell(lolek,bolek,50000.0);
         }
         catch (Exception f){
-            System.out.println(f);
+            f.printStackTrace();
         }
         try{
             Dacia.sell(bolek,lolek,Dacia.value);
         }
         catch (Exception g){
-            System.out.println(g);
+            g.printStackTrace();
         }
         try{
             Dacia.sell(bolek,lolek,10000.0);
@@ -162,7 +162,7 @@ public class Main {
             System.out.println(bolek.cash);
         }
         catch (Exception h){
-            System.out.println(h);
+            h.printStackTrace();
         }
 
 
