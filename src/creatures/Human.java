@@ -71,6 +71,7 @@ public class Human extends Animal{
 
     public void setCar(Car car, Integer carIndex){
         if(carIndex < this.garage.length && carIndex >= 0 && this.garage[carIndex] == null) {
+            car.owners.add(this);
             this.garage[carIndex] = car;
         }
         else {

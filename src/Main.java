@@ -105,10 +105,12 @@ public class Main {
 
         //Zadanie 11
         Human bolek = new Human("Homo sapiens",1996);
+        bolek.firstName = "Bolek";
         bolek.setSalary(5000.0);
         bolek.cash = 150000.0;
 
         Human lolek = new Human("Homo sapiens",1996,3);
+        lolek.firstName = "Lolek";
         lolek.setSalary(6000.0);
         lolek.cash = 10000.0;
 
@@ -118,6 +120,7 @@ public class Main {
 
         bolek.setCar(Passat, 1);
         bolek.setCar(Dacia, 0);
+        lolek.setCar(Tesla, 0);
         lolek.setCar(Tesla, 0);
 
         System.out.println("Wartość garażu Bolka to: " + bolek.getGarageValue());
@@ -165,10 +168,20 @@ public class Main {
             h.printStackTrace();
         }
 
+        //Zadanie 12
+        System.out.println(lolek.getCar(1));
+        System.out.println(Dacia.owners.get(Dacia.owners.size()-1));
 
+        Dacia.anyOwner(lolek);
+        Dacia.anyOwner(bolek);
+
+        Human olek = new Human("Homo sapiens",2000);
+        olek.firstName = "Olek";
+        Dacia.anyOwner(olek);
+
+        Dacia.checkTransaction(bolek, lolek);
+        Dacia.checkTransaction(olek, lolek);
+        Dacia.checkTransaction(olek, lolek);
+        System.out.println("To auto było sprzedawane " + Dacia.howManyTransactions() + " razy.");
     }
-
-
-
-
 }
