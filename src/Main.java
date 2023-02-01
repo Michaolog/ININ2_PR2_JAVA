@@ -4,6 +4,7 @@ import devices.*;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -183,5 +184,48 @@ public class Main {
         Dacia.checkTransaction(olek, lolek);
         Dacia.checkTransaction(olek, lolek);
         System.out.println("To auto było sprzedawane " + Dacia.howManyTransactions() + " razy.");
+
+        //Zadanie 13
+        olek.phone = new Phone("Xiaomi", "Mi 10T Lite", 2020, 1130.0, 6.7);
+
+        Application messenger = new Application("Messenger");
+        Application instagram = new Application("Instagram", "1.2.1");
+        Application fm23m = new Application("Football Manager 23 Mobile", "1.2.3", 44.99);
+        Application terraria = new Application("Terraria", "3.2.1", 23.99, "www.gryMobilne.pl");
+        try{
+            URL url2 = new URL("https", "googleApps.com", "whatsApp");
+            Application whatsApp = new Application(url2);
+            olek.phone.installAnApp(olek, whatsApp);
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage()+"\n");
+        }
+
+        olek.phone.installAnApp(olek, terraria);
+        olek.cash += 79.99;
+        olek.phone.installAnApp(olek, terraria);
+        System.out.println("Olkowi po zakupie aplikacji zostało " + olek.cash + " PLN.");
+
+
+        olek.phone.checkIsInstalled(terraria);
+        olek.phone.checkIsInstalled(fm23m);
+
+        for (String s : Arrays.asList("whatsApp", "Messenger", "Terraria")) {
+            olek.phone.checkIsInstalled(s);
+        }
+
+        ArrayList<Application> apps = new ArrayList<>();
+        apps.add(instagram);
+        apps.add(messenger);
+        olek.phone.installAnApp(olek, apps);
+
+        olek.phone.showFreeApps();
+
+        olek.phone.installAnApp(olek, fm23m);
+        System.out.println("\nWartość zainstalowanych aplikacji wynosi: " + olek.phone.showCostOfMyApps() + " PLN.\n");
+
+
+        olek.phone.printAlphabeticOrder();
+        olek.phone.printPriceOrder();
     }
 }
